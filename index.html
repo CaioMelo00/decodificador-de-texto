@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Caio Vínicius">
+        <meta name="description" content="Codifique suas mensagens para garantir a confidencialidade delas.">
+        
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Script -->
+        <script src="script/script.js" defer></script>
+
+        <title>Decodificador de Texto</title>
+    </head>
+
+    <body>
+
+        <main class="main-content">
+
+            <section class="input-area">
+                <textarea id="inputText" class="input-area_textarea" "40" rows="10" placeholder="Digite seu texto"></textarea>
+
+                <div>
+                    <div class="input-area_info">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        <p>Apenas letras minúsculas e sem acento.</p>
+                    </div>
+
+                    <div class="input-area_buttons-area">
+                        <button id="encryptButton" class="btn btn-encrypt">Criptografar</button>
+                        <button id="decryptButton" class="btn btn-decrypt">Descriptografar</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="output-area">
+                <div id="outputTextArea" class="output-area_textarea">
+                    <img id="outputImage" class="output-area_image" src="assets/output-image.png" alt="Garoto de cabelo azul ajoealhado observando um diamante com uma lupa">
+                    <h2 id="outputTitle" class="output-area_title">Nenhuma mensagem encontrada</h2>
+                    <p id="outputText" class="output-area_text">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    <button id="outputCopyButton" class="btn btn-copy" hidden>Copiar</button>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="rodape">
+            <p>2024 | Projeto desenvolvido por Caio Vinícius &#128578</p>
+        </footer>
+
+    </body>
+</html>
